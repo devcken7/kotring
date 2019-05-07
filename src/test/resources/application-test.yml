@@ -1,0 +1,16 @@
+spring.datasource:
+  driver-class-name: org.h2.Driver
+  url: jdbc:h2:mem:kotring;MODE=MySQL
+  username:
+  password:
+
+spring.jpa:
+  properties:
+    hibernate.format_sql: true
+
+spring.h2.console:
+  enabled: true
+  path: /h2-console
+
+spring.flyway:
+  locations: ['classpath:db/migration', 'classpath:db/data']
